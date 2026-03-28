@@ -2,7 +2,7 @@ window.onload = function () {
   const data = [
     {
       name: "kafka",
-      word: "\u201cI am constantly trying to communicae something incommunicable, to explain something inexplicable, to tell about something I only feel in my bones and which can only be experienced in those bones \u201d \u2014 Franz Kafka, Letters to Milena",
+      word: "\u201cI am constantly trying to communicate something incommunicable, to explain something inexplicable, to tell about something I only feel in my bones and which can only be experienced in those bones.\u201d \u2014 Franz Kafka, Letters to Milena",
     },
     {
       name: "nietzsche",
@@ -10,11 +10,11 @@ window.onload = function () {
     },
     {
       name: "tolstoy",
-      word: "\u201cAll happy families are alike; each unhappy family is unhappy in its in own way \u2014 Leo Tolstoy, Anna Karenia",
+      word: "\u201cAll happy families are alike; each unhappy family is unhappy in its in own way \u201d \u2014 Leo Tolstoy, Anna karenina",
     },
     {
       name: "dostoevsky",
-      word: "\u201cAll happy families are alike; each unhappy family is unhappy in its own way\u201d \u2014 Fyodor dostovsky, The Browser Karamazov",
+      word: "\u201cPeople talk sometimes of bestial cruelty, but that\u2019s a great injustice and insult to the beasts; a beast can never be so cruel as a man, so artistically cruel \u201d \u2014 Fyodor Dostoevsky, The Brothers Karamazov",
     },
   ];
   const blocks = document.getElementsByClassName("block");
@@ -32,15 +32,7 @@ window.onload = function () {
     pop_mask.style.opacity = 0;
     setTimeout(function () {
       pop_mask.style.opacity = 0;
-      pop_img.className = "pop_image ";
-      pop_img.style.zIndex = -1;
-      pop_mask.className = "pop_mask";
-    }, 300);
-  };
-  pop_mask.onclick = function () {
-    pop_mask.style.opacity = 0;
-    setTimeout(function () {
-      pop_img.className = "pop_image ";
+      pop_img.className = "pop_img";
       pop_img.style.zIndex = -1;
       pop_mask.className = "pop_mask";
     }, 300);
@@ -49,8 +41,8 @@ window.onload = function () {
   function pop_mask_function(name, number) {
     pop_mask.style.opacity = 1;
     pop_mask.style.zIndex = 3;
-    pop_masks.className += "pop_masks_animation";
-    pop_img.className = "pop_img" + name + "_photo";
+    pop_mask.className += " pop_mask_animation";
+    pop_img.className = "pop_img " + name + "_photo";
     pop_content.innerHTML = data[number].word;
   }
 };
