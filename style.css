@@ -11,7 +11,7 @@ body {
 .pop_mask {
   position: fixed;
   top: 0px;
-  left: 0p;
+  left: 0px;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
@@ -55,7 +55,7 @@ body {
 }
 
 .pop_mask_animation {
-  transition: opacity 0.3 0s;
+  transition: opacity 0.3s 0s;
   opacity: 1;
 }
 
@@ -105,7 +105,7 @@ body {
   overflow: hidden;
 }
 
-.big .block .img {
+.big .block img {
   height: 100%;
   transform: translateX(0px);
   transition: transform linear 10s;
@@ -134,7 +134,7 @@ body {
   padding: 1vw;
   transition:
     opacity 0.3s 0.5s,
-    color 0.3;
+    color 0.3s;
 }
 
 .big .block:hover {
@@ -144,7 +144,7 @@ body {
   transform: translateX(-46vw);
 }
 
-.big .block:hover .content .words {
+.big .block:hover .content {
   height: 100%;
 }
 
