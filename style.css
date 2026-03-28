@@ -5,7 +5,7 @@
 }
 body {
   overflow: hidden;
-  background-color: #141414;
+  background-color: #000000;
   font-family: arial;
 }
 .pop_mask {
@@ -37,9 +37,9 @@ body {
 .pop_mask .pop_block .pop_img {
   width: 60%;
   height: 75%;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   opacity: 0;
 }
 
@@ -107,8 +107,9 @@ body {
 
 .big .block img {
   height: 100%;
+  object-fit: cover;
   transform: translateX(0px);
-  transition: transform linear 10s;
+  transition: transform linear 5s;
 }
 
 .big .block .content {
@@ -141,7 +142,7 @@ body {
   cursor: pointer;
 }
 .big .block:hover img {
-  transform: translateX(-46vw);
+  transform: translateX(-20vw);
 }
 
 .big .block:hover .content {
