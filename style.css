@@ -89,3 +89,136 @@ body {
 .dostoevsky_photo {
   background-image: url("images/dostoevsky.jpg");
 }
+.big {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.big .block {
+  position: initial;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.big .block .img {
+  height: 100%;
+  transform: translateX(0px);
+  transition: transform linear 10s;
+}
+
+.big .block .content {
+  position: absolute;
+  bottom: 0px;
+  width: 25%;
+  height: 0px;
+  background: rgba(0, 0, 0, 0.6);
+  transition: height 0.5s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.big .block .content .words {
+  font-size: 1.2vw;
+  text-align: justify;
+  width: 98%;
+  display: inline-block;
+  color: transparent;
+  opacity: 0;
+  padding: 1vw;
+  transition:
+    opacity 0.3s 0.5s,
+    color 0.3;
+}
+
+.big .block:hover {
+  cursor: pointer;
+}
+.big .block:hover img {
+  transform: translateX(-46vw);
+}
+
+.big .block:hover .content .words {
+  height: 100%;
+}
+
+.big .block:hover .content .words {
+  opacity: 1;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .pop_mask .pop_block {
+    flex-direction: column;
+  }
+  .pop_mask .pop_block .pop_img {
+    width: 75%;
+    height: 60%;
+  }
+  .pop_mask .pop_block .pop_content {
+    display: flex;
+    width: 75%;
+    height: 37.5%;
+    font-size: 1.5vw;
+  }
+  .big {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .big .block {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .big .block img {
+    width: 100%;
+    height: auto;
+    transform: translateX(0px);
+    transition: transform linear 10s;
+  }
+  .big .block .content {
+    position: absolute;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: width 0.5s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .big .block .content .words {
+    font-size: 1.2vw;
+    text-align: justify;
+    width: 98%;
+    display: inline-block;
+    color: transparent;
+    opacity: 0;
+    padding: 1vw;
+    transition:
+      opacity 0.3s 0.5s,
+      color 0.3s;
+  }
+  .big .block:hover img {
+    transform: translateY(-46vh);
+  }
+  .big .block:hover .content {
+    width: 100%;
+  }
+  .big .block:hover .content .words {
+    opacity: 1;
+    color: white;
+  }
+}
