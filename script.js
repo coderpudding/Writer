@@ -29,12 +29,11 @@ window.onload = function () {
   });
 
   pop_mask.onclick = function () {
+    pop_mask.className = "pop_mask";
     pop_mask.style.opacity = 0;
+    pop_mask.style.zindex = -1;
     setTimeout(function () {
-      pop_mask.style.opacity = 0;
       pop_img.className = "pop_img";
-      pop_img.style.zIndex = -1;
-      pop_mask.className = "pop_mask";
     }, 300);
   };
 
