@@ -31,7 +31,7 @@ window.onload = function () {
   pop_mask.onclick = function () {
     pop_mask.className = "pop_mask";
     pop_mask.style.opacity = 0;
-    pop_mask.style.zindex = -1;
+    pop_mask.style.zIndex = -1;
     setTimeout(function () {
       pop_img.className = "pop_img";
     }, 300);
