@@ -1,6 +1,6 @@
 # Writers I Like
 
-![preview](images/.preview.png)
+![preview](images/preview.png)
 
 ## Description
 A visual showcase of four writers who shaped the way I think —
